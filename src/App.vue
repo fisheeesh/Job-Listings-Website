@@ -1,11 +1,13 @@
 <template>
-  <h1 class="text-2xl">Vue Jobs</h1>
+  <Navbar/>
+  <Hero/>
+  <HomeCard/>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import Navbar from '@/components/Navbar.vue';
+import Hero from './components/Hero.vue';
+import HomeCard from './components/HomeCard.vue';
 </script>
 
 <style>
