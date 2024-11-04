@@ -1,22 +1,28 @@
 <template>
-    <div class="bg-white rounded-xl shadow-md relative">
+    <div class="relative bg-white shadow-md rounded-xl">
         <div class="p-4">
             <div class="mb-6">
-                <div class="text-gray-600 my-2">{{ job.type }}</div>
+                <div class="my-2 text-gray-600">{{ job.type }}</div>
                 <h3 class="text-xl font-bold">Senior Vue Developer</h3>
             </div>
 
             <div class="mb-5">
-                {{ job.description }}
+                <div>
+                    {{ showFullDescription ? job.description : cutDes }}
+                </div>
+                <button @click="showFullDescription = !showFullDescription"
+                    class="mb-5 text-green-500 hover:text-green-600">
+                    {{ showFullDescription ? "See Less" : "See More" }}
+                </button>
             </div>
 
-            <h3 class="text-green-500 mb-2">{{ job.salary }} / Year</h3>
+            <h3 class="mb-2 text-green-500">{{ job.salary }} / Year</h3>
 
-            <div class="border border-gray-100 mb-5"></div>
+            <div class="mb-5 border border-gray-100"></div>
 
-            <div class="flex flex-col lg:flex-row justify-between mb-4">
-                <div class="text-orange-700 mb-3">
-                    <i class="fa-solid fa-location-dot text-lg"></i>
+            <div class="flex flex-col justify-between mb-4 lg:flex-row">
+                <div class="mb-3 text-orange-700">
+                    <i class="text-orange-700 pi pi-map-marker"></i>
                     {{ job.location }}
                 </div>
                 <a :href="'/job/' + job.id"
@@ -29,13 +35,20 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps, ref, computed } from 'vue';
 
-defineProps({
+const props = defineProps({
     job: {
         type: Object,
         required: true
     }
+})
+
+const showFullDescription = ref(false)
+
+
+const cutDes = computed(() => {
+    return props.job.description.substring(0, 90) + "... See more"
 })
 </script>
 

@@ -1,221 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/png" href="/favicon.ico" />
-    <title>Vue Jobs | Become a Vue Developer</title>
-  </head>
-  <body>
-    <nav class="bg-green-700 border-b border-green-500">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="flex h-20 items-center justify-between">
-          <div
-            class="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
-          >
-            <!-- Logo -->
-            <a class="flex flex-shrink-0 items-center mr-4" href="index.html">
-              <img class="h-10 w-auto" src="images/logo.png" alt="Vue Jobs" />
-              <span class="hidden md:block text-white text-2xl font-bold ml-2"
-                >Vue Jobs</span
-              >
-            </a>
-            <div class="md:ml-auto">
-              <div class="flex space-x-2">
-                <a
-                  href="index.html"
-                  class="text-white bg-green-900 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                  >Home</a
-                >
-                <a
-                  href="jobs.html"
-                  class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
-                  >Jobs</a
-                >
-                <a
-                  href="add-job.html"
-                  class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
-                  >Add Job</a
-                >
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="/favicon.ico" />
+  <title>Vue Jobs | Become a Vue Developer</title>
+</head>
+
+<body>
+  <nav class="bg-green-700 border-b border-green-500">
+    <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center justify-center flex-1 md:items-stretch md:justify-start">
+          <!-- Logo -->
+          <a class="flex items-center flex-shrink-0 mr-4" href="index.html">
+            <img class="w-auto h-10" src="images/logo.png" alt="Vue Jobs" />
+            <span class="hidden ml-2 text-2xl font-bold text-white md:block">Vue Jobs</span>
+          </a>
+          <div class="md:ml-auto">
+            <div class="flex space-x-2">
+              <a href="index.html"
+                class="px-3 py-2 text-white bg-green-900 rounded-md hover:bg-gray-900 hover:text-white">Home</a>
+              <a href="jobs.html" class="px-3 py-2 text-white rounded-md hover:bg-green-900 hover:text-white">Jobs</a>
+              <a href="add-job.html" class="px-3 py-2 text-white rounded-md hover:bg-green-900 hover:text-white">Add
+                Job</a>
             </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Hero -->
-    <section class="bg-green-700 py-20 mb-4">
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center"
-      >
-        <div class="text-center">
-          <h1
-            class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"
-          >
-            Become a Vue Dev
-          </h1>
-          <p class="my-4 text-xl text-white">
-            Find the Vue job that fits your skills and needs
+  <!-- Hero -->
+  <section class="py-20 mb-4 bg-green-700">
+    <div class="flex flex-col items-center px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+          Become a Vue Dev
+        </h1>
+        <p class="my-4 text-xl text-white">
+          Find the Vue job that fits your skills and needs
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Developers and Employers -->
+  <section class="py-4">
+    <div class="m-auto container-xl lg:container">
+      <div class="grid grid-cols-1 gap-4 p-4 rounded-lg md:grid-cols-2">
+        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold">For Developers</h2>
+          <p class="mt-2 mb-4">
+            Browse our Vue jobs and start your career today
           </p>
+          <a href="jobs.html" class="inline-block px-4 py-2 text-white bg-black rounded-lg hover:bg-gray-700">
+            Browse Jobs
+          </a>
+        </div>
+        <div class="p-6 bg-green-100 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold">For Employers</h2>
+          <p class="mt-2 mb-4">
+            List your job to find the perfect developer for the role
+          </p>
+          <a href="add-job.html" class="inline-block px-4 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
+            Add Job
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Developers and Employers -->
-    <section class="py-4">
-      <div class="container-xl lg:container m-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
-          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-bold">For Developers</h2>
-            <p class="mt-2 mb-4">
-              Browse our Vue jobs and start your career today
-            </p>
-            <a
-              href="jobs.html"
-              class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
-            >
-              Browse Jobs
-            </a>
-          </div>
-          <div class="bg-green-100 p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-bold">For Employers</h2>
-            <p class="mt-2 mb-4">
-              List your job to find the perfect developer for the role
-            </p>
-            <a
-              href="add-job.html"
-              class="inline-block bg-green-500 text-white rounded-lg px-4 py-2 hover:bg-green-600"
-            >
-              Add Job
-            </a>
+  <!-- Browse Jobs -->
+  <section class="px-4 py-10 bg-green-50">
+    <div class="m-auto container-xl lg:container">
+      <h2 class="mb-6 text-3xl font-bold text-center text-green-500">
+        Browse Jobs
+      </h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <!-- Job Listing 1 -->
+        <div class="relative bg-white shadow-md rounded-xl">
+          <div class="p-4">
+            <div class="mb-6">
+              <div class="my-2 text-gray-600">Full-Time</div>
+              <h3 class="text-xl font-bold">Senior Vue Developer</h3>
+            </div>
+
+            <div class="mb-5">
+              We are seeking a talented Front-End Developer to join our team
+              in Boston, MA. The ideal candidate will have strong skills in
+              HTML, CSS, and JavaScript...
+            </div>
+
+            <h3 class="mb-2 text-green-500">$70 - $80K / Year</h3>
+
+            <div class="mb-5 border border-gray-100"></div>
+
+            <div class="flex flex-col justify-between mb-4 lg:flex-row">
+              <div class="mb-3 text-orange-700">
+                <i class="text-lg fa-solid fa-location-dot"></i>
+                Boston, MA
+              </div>
+              <a href="job.html"
+                class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
+                Read More
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+        <!-- Job Listing 2 -->
+        <div class="relative bg-white shadow-md rounded-xl">
+          <div class="p-4">
+            <div class="mb-6">
+              <div class="my-2 text-gray-600">Remote</div>
+              <h3 class="text-xl font-bold">Front-End Engineer (Vue)</h3>
+            </div>
 
-    <!-- Browse Jobs -->
-    <section class="bg-green-50 px-4 py-10">
-      <div class="container-xl lg:container m-auto">
-        <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
-          Browse Jobs
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Job Listing 1 -->
-          <div class="bg-white rounded-xl shadow-md relative">
-            <div class="p-4">
-              <div class="mb-6">
-                <div class="text-gray-600 my-2">Full-Time</div>
-                <h3 class="text-xl font-bold">Senior Vue Developer</h3>
+            <div class="mb-5">
+              Join our team as a Front-End Developer in sunny Miami, FL. We
+              are looking for a motivated individual with a passion...
+            </div>
+
+            <h3 class="mb-2 text-green-500">$70K - $80K / Year</h3>
+
+            <div class="mb-5 border border-gray-100"></div>
+
+            <div class="flex flex-col justify-between mb-4 lg:flex-row">
+              <div class="mb-3 text-orange-700">
+                <i class="text-lg fa-solid fa-location-dot"></i>
+                Miami, FL
               </div>
-
-              <div class="mb-5">
-                We are seeking a talented Front-End Developer to join our team
-                in Boston, MA. The ideal candidate will have strong skills in
-                HTML, CSS, and JavaScript...
-              </div>
-
-              <h3 class="text-green-500 mb-2">$70 - $80K / Year</h3>
-
-              <div class="border border-gray-100 mb-5"></div>
-
-              <div class="flex flex-col lg:flex-row justify-between mb-4">
-                <div class="text-orange-700 mb-3">
-                  <i class="fa-solid fa-location-dot text-lg"></i>
-                  Boston, MA
-                </div>
-                <a
-                  href="job.html"
-                  class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
-                >
-                  Read More
-                </a>
-              </div>
+              <a href="job.html"
+                class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
+                Read More
+              </a>
             </div>
           </div>
-          <!-- Job Listing 2 -->
-          <div class="bg-white rounded-xl shadow-md relative">
-            <div class="p-4">
-              <div class="mb-6">
-                <div class="text-gray-600 my-2">Remote</div>
-                <h3 class="text-xl font-bold">Front-End Engineer (Vue)</h3>
-              </div>
-
-              <div class="mb-5">
-                Join our team as a Front-End Developer in sunny Miami, FL. We
-                are looking for a motivated individual with a passion...
-              </div>
-
-              <h3 class="text-green-500 mb-2">$70K - $80K / Year</h3>
-
-              <div class="border border-gray-100 mb-5"></div>
-
-              <div class="flex flex-col lg:flex-row justify-between mb-4">
-                <div class="text-orange-700 mb-3">
-                  <i class="fa-solid fa-location-dot text-lg"></i>
-                  Miami, FL
-                </div>
-                <a
-                  href="job.html"
-                  class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
-                >
-                  Read More
-                </a>
-              </div>
+        </div>
+        <!-- Job Listing 3 -->
+        <div class="relative bg-white shadow-md rounded-xl">
+          <div class="p-4">
+            <div class="mb-6">
+              <div class="my-2 text-gray-600">Remote</div>
+              <h3 class="text-xl font-bold">Vue.js Developer</h3>
             </div>
-          </div>
-          <!-- Job Listing 3 -->
-          <div class="bg-white rounded-xl shadow-md relative">
-            <div class="p-4">
-              <div class="mb-6">
-                <div class="text-gray-600 my-2">Remote</div>
-                <h3 class="text-xl font-bold">Vue.js Developer</h3>
+
+            <div class="mb-5">
+              Are you passionate about front-end development? Join our team in
+              vibrant Brooklyn, NY, and work on exciting projects that make a
+              difference...
+            </div>
+
+            <h3 class="mb-2 text-green-500">$70K - $80K / Year</h3>
+
+            <div class="mb-5 border border-gray-100"></div>
+
+            <div class="flex flex-col justify-between mb-4 lg:flex-row">
+              <div class="mb-3 text-orange-700">
+                <i class="text-lg fa-solid fa-location-dot"></i>
+                Brooklyn, NY
               </div>
-
-              <div class="mb-5">
-                Are you passionate about front-end development? Join our team in
-                vibrant Brooklyn, NY, and work on exciting projects that make a
-                difference...
-              </div>
-
-              <h3 class="text-green-500 mb-2">$70K - $80K / Year</h3>
-
-              <div class="border border-gray-100 mb-5"></div>
-
-              <div class="flex flex-col lg:flex-row justify-between mb-4">
-                <div class="text-orange-700 mb-3">
-                  <i class="fa-solid fa-location-dot text-lg"></i>
-                  Brooklyn, NY
-                </div>
-                <a
-                  href="job.html"
-                  class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
-                >
-                  Read More
-                </a>
-              </div>
+              <a href="job.html"
+                class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
+                Read More
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="m-auto max-w-lg my-10 px-6">
-      <a
-        href="jobs.html"
-        class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-        >View All Jobs</a
-      >
-    </section>
+  <section class="max-w-lg px-6 m-auto my-10">
+    <a href="jobs.html" class="block px-6 py-4 text-center text-white bg-black rounded-xl hover:bg-gray-700">View All
+      Jobs</a>
+  </section>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
