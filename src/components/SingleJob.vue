@@ -25,7 +25,7 @@
                     <i class="text-orange-700 pi pi-map-marker"></i>
                     {{ job.location }}
                 </div>
-                <RouterLink :to="'/job/' + job.id"
+                <RouterLink :to="{ name: 'job-details', params: { id: job.id } }"
                     class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
                     Read More
                 </RouterLink>

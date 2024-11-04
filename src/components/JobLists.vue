@@ -5,7 +5,7 @@
                 Browse Jobs
             </h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-                <SingleJob v-for="job in jobs.slice(0, limit || jobs.length)" :key="job.id" :job="job" />
+                <SingleJob v-for="job in state.jobs.slice(0, limit || state.jobs.length)" :key="job.id" :job="job" />
             </div>
         </div>
     </section>
@@ -18,22 +18,37 @@
 </template>
 
 <script setup>
-import jobData from '@/jobs.json'
-import { ref, defineProps } from 'vue';
+import { reactive, defineProps, onMounted } from 'vue';
 import SingleJob from './SingleJob.vue';
 import { RouterLink } from 'vue-router';
+import axios from 'axios';
 
 defineProps({
-    limit : Number,
-    showButton : {
-        type : Boolean,
-        default : false
+    limit: Number,
+    showButton: {
+        type: Boolean,
+        default: false
     }
-    
 })
 
-const jobs = ref(jobData)
-console.log(jobs.value)
+const state = reactive({
+    jobs: [],
+    isLoading: true
+})
+
+onMounted(async () => {
+    try {
+        const res = await axios.get('http://localhost:8000/jobs')
+        console.log(res.data)
+        state.jobs = res.data
+    }
+    catch (err) {
+        console.error('Error Fetching jobs : ', err)
+    }
+    finally {
+        state.isLoading = false
+    }
+})
 </script>
 
 <style></style>
