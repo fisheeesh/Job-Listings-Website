@@ -1,5 +1,5 @@
 <template>
-    <BackButton/>
+    <BackButton />
     <section v-if="!state.isLoading" class="bg-green-50">
         <div class="container px-6 py-10 m-auto">
             <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-70/30">
@@ -8,7 +8,7 @@
                         <div class="mb-4 text-gray-500">{{ state.job.type }}</div>
                         <h1 class="mb-4 text-3xl font-bold">{{ state.job.title }}</h1>
                         <div class="flex justify-center mb-4 text-gray-500 align-middle md:justify-start">
-                            <i class="mr-2 text-lg text-orange-700 fa-solid fa-location-dot"></i>
+                            <i class="mr-2 text-lg text-orange-700 pi pi-map-marker"></i>
                             <p class="text-orange-700">{{ state.job.location }}</p>
                         </div>
                     </div>
@@ -57,7 +57,8 @@
                     <div class="p-6 mt-6 bg-white rounded-lg shadow-md">
                         <h3 class="mb-6 text-xl font-bold">Manage Job</h3>
                         <RouterLink :to="`/jobs/edit/${state.job.id}`"
-                            class="block w-full px-4 py-2 mt-4 font-bold text-center text-white bg-green-500 rounded-full hover:bg-green-600 focus:outline-none focus:shadow-outline">Edit
+                            class="block w-full px-4 py-2 mt-4 font-bold text-center text-white bg-green-500 rounded-full hover:bg-green-600 focus:outline-none focus:shadow-outline">
+                            Edit
                             Job</RouterLink>
                         <button
                             class="block w-full px-4 py-2 mt-4 font-bold text-white bg-red-500 rounded-full hover:bg-red-600 focus:outline-none focus:shadow-outline">
@@ -69,7 +70,7 @@
         </div>
     </section>
     <div v-else class="py-6 mt-6 text-center text-gray-500">
-        <PulseLoader/>
+        <PulseLoader />
     </div>
 </template>
 
