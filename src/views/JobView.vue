@@ -56,7 +56,7 @@
                     <!-- Manage -->
                     <div class="p-6 mt-6 bg-white rounded-lg shadow-md">
                         <h3 class="mb-6 text-xl font-bold">Manage Job</h3>
-                        <RouterLink :to="`/jobs/edit/${state.job.id}`"
+                        <RouterLink :to="{ name: 'edit-job', params: { id: state.job.id } }"
                             class="block w-full px-4 py-2 mt-4 font-bold text-center text-white bg-green-500 rounded-full hover:bg-green-600 focus:outline-none focus:shadow-outline">
                             Edit
                             Job</RouterLink>
