@@ -83,62 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "c552",
-      "type": "Internship",
-      "title": "Althea Bush",
-      "description": "Dolorem quis culpa ",
-      "salary": "$60K - $70K",
-      "location": "Expedita excepteur d",
-      "company": {
-        "name": "Rice Dunlap Traders",
-        "description": "Dolor architecto dol",
-        "contactEmail": "xavujoju@mailinator.com",
-        "contactPhone": "+1 (166) 429-5354"
-      }
-    },
-    {
-      "id": "e9b1",
-      "type": "Remote",
-      "title": "Dylan Russell",
-      "description": "Et dolor in neque re",
-      "salary": "Over $200K",
-      "location": "Corporis doloremque ",
-      "company": {
-        "name": "Middleton and Clarke Co",
-        "description": "Ab odit alias conseq",
-        "contactEmail": "sitinefyci@mailinator.com",
-        "contactPhone": "+1 (353) 763-3747"
-      }
-    },
-    {
-      "id": "fabb",
-      "type": "Full-Time",
-      "title": "Colette Pratt",
-      "description": "Corporis harum vel d",
-      "salary": "$90K - $100K",
-      "location": "Cumque et magni quo ",
-      "company": {
-        "name": "Burris and Newton Inc",
-        "description": "Cillum delectus cor",
-        "contactEmail": "juqiviwata@mailinator.com",
-        "contactPhone": "+1 (515) 811-1815"
-      }
-    },
-    {
-      "id": "a26d",
-      "type": "Remote",
-      "title": "Allen Harding",
-      "description": "Autem possimus dolo",
-      "salary": "$90K - $100K",
-      "location": "Dignissimos sit repe",
-      "company": {
-        "name": "Griffin and Santana Co",
-        "description": "Adipisci id error c",
-        "contactEmail": "hapoqe@mailinator.com",
-        "contactPhone": "+1 (714) 783-3495"
-      }
     }
   ]
 }
