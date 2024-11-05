@@ -93,7 +93,7 @@ const state = reactive({
 onMounted(async () => {
     try {
         await new Promise((resolve, _) => setTimeout(resolve, 800))
-        let res = await axios.get(`http://localhost:8000/jobs/${jobId}`)
+        let res = await axios.get(`/api/jobs/${jobId}`)
         // console.log(res.data)
         state.job = res.data
     }

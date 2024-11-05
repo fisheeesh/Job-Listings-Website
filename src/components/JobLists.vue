@@ -45,7 +45,8 @@ onMounted(async () => {
     try {
         // Simulate delay
         await new Promise((resolve) => setTimeout(resolve, 800));
-        const res = await axios.get('http://localhost:8000/jobs');
+        // const res = await axios.get('http://localhost:8000/jobs');
+        const res = await axios.get('/api/jobs');
         console.log(res.data);
         state.jobs = res.data;
     }
