@@ -1,4 +1,5 @@
 <template>
+    <BackButton/>
     <section v-if="!state.isLoading" class="bg-green-50">
         <div class="container px-6 py-10 m-auto">
             <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-70/30">
@@ -77,6 +78,8 @@ import { reactive, onMounted } from 'vue';
 import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
 import axios from 'axios';
 import { RouterLink, useRoute } from 'vue-router';
+import BackButton from '@/components/BackButton.vue';
+
 
 const route = useRoute()
 
