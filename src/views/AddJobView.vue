@@ -100,8 +100,11 @@
 import axios from 'axios';
 import { reactive } from 'vue';
 import { useRouter } from 'vue-router';
+import { useToast } from 'vue-toastification';
 
 const router = useRouter()
+
+const toast = useToast()
 
 const form = reactive({
     type: 'Part-Time',
@@ -136,10 +139,12 @@ const handleSubmit = async () => {
         /**
          * * @TODO - show toast
          */
+        toast.success('Job Added Successfully!')
         router.push({ name: 'job-details', params: { id: res.data.id } })
     }
     catch (err) {
         console.error('Error Adding Job : ', err)
+        toast.error('Job Was Not Added!')
     }
 }
 </script>

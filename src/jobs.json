@@ -125,6 +125,20 @@
         "contactEmail": "juqiviwata@mailinator.com",
         "contactPhone": "+1 (515) 811-1815"
       }
+    },
+    {
+      "id": "a26d",
+      "type": "Remote",
+      "title": "Allen Harding",
+      "description": "Autem possimus dolo",
+      "salary": "$90K - $100K",
+      "location": "Dignissimos sit repe",
+      "company": {
+        "name": "Griffin and Santana Co",
+        "description": "Adipisci id error c",
+        "contactEmail": "hapoqe@mailinator.com",
+        "contactPhone": "+1 (714) 783-3495"
+      }
     }
   ]
 }
